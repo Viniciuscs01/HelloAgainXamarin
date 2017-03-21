@@ -13,7 +13,7 @@ namespace HelloWorld2
         {
             InitializeComponent();
 
-            MainPage = new ListsEx1();
+            MainPage = new ListPage();
         }
 
         protected override void OnStart()
