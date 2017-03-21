@@ -116,6 +116,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DOCS\AbsoluteLayout-Exercise.pdf" />
+    <None Include="DOCS\Grid-Exercise.pdf" />
+    <None Include="DOCS\Image-Exercise.pdf" />
+    <None Include="DOCS\Images-Cheat-Sheet.pdf" />
+    <None Include="DOCS\List-Exercise.pdf" />
+    <None Include="DOCS\Lists-Cheat-Sheet.pdf" />
+    <None Include="DOCS\PCL-vs-SAP.pdf" />
+    <None Include="DOCS\RelativeLayout-Exercise.pdf" />
+    <None Include="DOCS\Setting-Up-the-Development-Environment.pdf" />
+    <None Include="DOCS\Setting-Up-Your-Mobile-Device-for-Development.pdf" />
+    <None Include="DOCS\StackLayout-Exercise.pdf" />
+    <None Include="DOCS\XAML-Essentials-Cheat-Sheet.pdf" />
+    <None Include="DOCS\XAML-Essentials-Exercise.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
