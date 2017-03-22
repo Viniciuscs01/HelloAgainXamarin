@@ -15,13 +15,15 @@ namespace HelloWorld2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListsEx1 : ContentPage
     {
+        SearchService searchServ;
+        SearchGroup searchGroup;
         public ListsEx1()
         {
-            InitializeComponent();
-            SearchService searchServ = new SearchService();
-            IEnumerable<Search> searchs = searchServ.GetSearchs();
-            SearchGroup searchGroup = new SearchGroup("Recent Searchs");
-            searchGroup.AddRange(searchs);
+            searchServ = new SearchService();
+
+            InitializeComponent();            
+
+            searchGroup = new SearchGroup("Recent Searchs", searchServ.GetSearchs());            
 
             listView.ItemsSource = new ObservableCollection<SearchGroup>
             {
@@ -31,7 +33,7 @@ namespace HelloWorld2
 
         private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            listView.SelectedItem = null;
         }
 
         private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -41,6 +43,16 @@ namespace HelloWorld2
 
         private void listView_Refreshing(object sender, EventArgs e)
         {
+
+        }
+
+        private void Delete_Clicked(object sender, EventArgs e)
+        {
+            var search = (sender as MenuItem).CommandParameter as Search;
+
+            searchGroup.Remove(search);
+            searchServ.DeleteSearch(search.Id);
+            
 
         }
     }

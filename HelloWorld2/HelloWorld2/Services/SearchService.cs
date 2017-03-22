@@ -10,10 +10,10 @@ namespace HelloWorld2.Services
 {
      class SearchService
     {
-        ObservableCollection<Search> _searchs;
+        List<Search> _searchs;
         public SearchService()
         {
-            _searchs = new ObservableCollection<Search>
+            _searchs = new List<Search>
             {
                 new Search
                 {
@@ -38,7 +38,7 @@ namespace HelloWorld2.Services
 
         public void DeleteSearch(int searchId)
         {
-
+            _searchs.Remove(_searchs.Single(s => s.Id == searchId));
         }
     }
 }

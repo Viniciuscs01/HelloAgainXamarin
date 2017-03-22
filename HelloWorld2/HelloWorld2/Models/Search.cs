@@ -12,5 +12,12 @@ namespace HelloWorld2.Models
         public string Location { get; set; }
         public DateTime CheckIn { get; set; }
         public DateTime CheckOut { get; set; }
+        public string Dates
+        {
+            get
+            {
+                return string.Format($"{CheckIn.ToString()} - {CheckOut.ToString()}");
+            }
+        }
     }
 }
