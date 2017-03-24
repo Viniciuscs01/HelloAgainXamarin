@@ -13,7 +13,7 @@ namespace HelloWorld2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new HierWelcomePage());
+            MainPage = new NavigationPage (new ModalNav());
         }
 
         protected override void OnStart()
