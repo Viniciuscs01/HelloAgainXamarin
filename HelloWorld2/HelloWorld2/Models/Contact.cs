@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelloWorld2.Models
 {
-    class Contact
+    public class Contact
     {
         public string Name { get; set; }
         public string Status { get; set; }

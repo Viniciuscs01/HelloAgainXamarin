@@ -47,6 +47,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ApplicationProperties.xaml.cs">
+      <DependentUpon>ApplicationProperties.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactMethodsPage.xaml.cs">
+      <DependentUpon>ContactMethodsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayingAlerts.xaml.cs">
+      <DependentUpon>DisplayingAlerts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\DateCell.xaml.cs">
+      <DependentUpon>DateCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GridDial.xaml.cs">
       <DependentUpon>GridDial.xaml</DependentUpon>
     </Compile>
@@ -77,10 +89,22 @@
     <Compile Include="ListsEx1.xaml.cs">
       <DependentUpon>ListsEx1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainCarouselPage.xaml.cs">
+      <DependentUpon>MainCarouselPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainToolBarPage.xaml.cs">
+      <DependentUpon>MainToolBarPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MarkupExtensions\EmbeddedImages.cs" />
+    <Compile Include="MasterContactDetailPage.xaml.cs">
+      <DependentUpon>MasterContactDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MasterContactsPage.xaml.cs">
+      <DependentUpon>MasterContactsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModalNav.xaml.cs">
       <DependentUpon>ModalNav.xaml</DependentUpon>
     </Compile>
@@ -104,6 +128,15 @@
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainTabbedPage.xaml.cs">
+      <DependentUpon>MainTabbedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls.xaml.cs">
+      <DependentUpon>FormControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TableViewPage.xaml.cs">
+      <DependentUpon>TableViewPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -243,6 +276,72 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ModalNav2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MasterContactsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MasterContactDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainTabbedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainCarouselPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DisplayingAlerts.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainToolBarPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormControls.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TableViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extensions\DateCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactMethodsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplicationProperties.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
